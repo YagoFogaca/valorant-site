@@ -39,21 +39,20 @@ export const Li = styled.li`
 `;
 
 export const NavMobile = styled.nav`
-  /* position: relative; */
-  width: 45%;
   display: none;
 
-  flex-direction: row;
-  justify-content: flex-end;
   @media (max-width: 768px) {
-    display: flex;
+    display: block;
   }
 `;
 
-export const Lines = styled.div`
-  right: 45px;
-
+export const BtnLines = styled.button`
+  position: relative;
   cursor: pointer;
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+  min-height: 37px;
 `;
 
 export const Line = styled.div`
@@ -66,18 +65,19 @@ export const Line = styled.div`
     opacity: 0;
   }
 
-  &.line-active-1 {
+  &.line-active {
     position: absolute;
-    transform: rotate(45deg);
     transform-origin: center;
     top: 49%;
+    margin-top: 0px;
   }
 
-  &.line-active-2 {
-    position: absolute;
+  &.one {
+    transform: rotate(45deg);
+  }
+
+  &.two {
     transform: rotate(-45deg);
-    transform-origin: center;
-    top: 49%;
   }
 `;
 

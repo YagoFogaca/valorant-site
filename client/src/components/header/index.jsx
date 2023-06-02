@@ -19,11 +19,11 @@ export function Header() {
       </C.Nav>
 
       <C.NavMobile>
-        <C.Lines onClick={handleMenu}>
-          <C.Line className={active ? 'line-active-1' : ''}></C.Line>
+        <C.BtnLines onClick={handleMenu}>
+          <C.Line className={active ? 'line-active one' : ''}></C.Line>
           <C.Line className={active ? 'line-disabled' : ''}></C.Line>
-          <C.Line className={active ? 'line-active-2' : ''}></C.Line>
-        </C.Lines>
+          <C.Line className={active ? 'line-active two' : ''}></C.Line>
+        </C.BtnLines>
         <C.UlMobile className={active ? 'active' : ''}>
           <C.Li>Agentes</C.Li>
           <C.Li>Mapas</C.Li>
