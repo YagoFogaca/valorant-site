@@ -91,6 +91,7 @@ export const UlMobile = styled.ul`
   box-shadow: rgb(218, 0, 55) 0px 0px 10px;
   transform: translateX(110%);
   transition: all 200ms ease-in;
+  z-index: 1;
 
   display: flex;
   flex-direction: column;
