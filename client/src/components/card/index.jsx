@@ -1,9 +1,10 @@
+import React, { forwardRef } from 'react';
 import * as C from './style.js';
 
-export function Card({ img, name }) {
+export const Card = forwardRef(({ img, name }, ref) => {
   return (
     <>
-      <C.Section>
+      <C.Section ref={ref}>
         <C.Figure>
           <C.Img src={img} />
         </C.Figure>
@@ -13,4 +14,4 @@ export function Card({ img, name }) {
       </C.Section>
     </>
   );
-}
+});

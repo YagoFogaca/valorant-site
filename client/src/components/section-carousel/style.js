@@ -15,3 +15,36 @@ export const H2 = styled.h2`
     text-align: center;
   }
 `;
+
+export const Article = styled.article`
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 45px;
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+`;
+
+export const Button = styled.button`
+  background-color: transparent;
+  border: none;
+  color: #ededed;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  cursor: pointer;
+
+  svg {
+    font-size: 45px;
+  }
+`;
+
+export const ButtonLeft = styled(Button)`
+  left: 0;
+`;
+
+export const ButtonRight = styled(Button)`
+  right: 0;
+`;
